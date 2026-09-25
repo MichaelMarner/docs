@@ -38,7 +38,7 @@ kratos cleanup sql <database-url> [flags]
   -b, --database.cleanup.batch_size int          Set the number of records to be cleaned per run (default 100)
       --database.cleanup.sleep.tables duration   How long to wait between each table cleanup (default 1m0s)
   -h, --help                                     help for sql
-      --keep-last duration                       Don't remove records younger than
+      --keep-last duration                       Don't remove records younger than duration provided. Valid units are ms, s, m, h. For example, 24h for 1 day.
   -e, --read-from-env                            If set, reads the database connection string from the environment variable DSN or config file key dsn. (default true)
 ```
 
